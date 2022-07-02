@@ -1,15 +1,15 @@
 //usando ciclo for
 
-/* let nombreDerivante| = prompt("Buen día, Ingrese su nombre");
+ let nombreDerivante = prompt("Buen día, Ingrese su nombre");
 
 
 let total_prestaciones = 0;
-let cantidad_analisis = parseInt(prompt("Ingrese la cantidad de análisis solicitados por su medico"));
+let cantidad_analisis = parseInt(prompt("Ingrese la cantidad de análisis que desea derivar"));
 
 
 for (let i = 0; i < cantidad_analisis; i++) {
-    let prestacion = prompt("Ingrese nombre de la prestación solicitada por su Médico");
-    let precio_prestacion = parseFloat(prompt("Ingrese el precio de la prestación que figura en la grilla"));
+    let prestacion = prompt("Ingrese nombre del análisis");
+    let precio_prestacion = parseFloat(prompt("Ingrese el precio de la prestación que figura en la grilla de derivacion"));
     total_prestaciones += precio_prestacion;
     let mensaje = "Usted ingresó " + prestacion + " por $" + precio_prestacion;
     alert(mensaje);
@@ -18,14 +18,14 @@ for (let i = 0; i < cantidad_analisis; i++) {
 
 
 
-alert ("Estimado derivante " + nombrePaciente + " El total a abonar por las prestaciones es de: $" + total_prestaciones);
+alert ("Estimado derivante " + nombreDerivante + " El total a abonar por las derivaciones seleccionadas es de: $" + total_prestaciones);
 
 
- */
+ 
 
 //
 
-let namePaciente = prompt("Buen día, Ingrese su nombre");
+/* let namePaciente = prompt("Buen día, Ingrese su nombre");
 
 let colTotal = prompt("Ingrese su valor de Colesterol Total");
 
@@ -59,3 +59,4 @@ if (indice < 4){
 
 
 
+ */
