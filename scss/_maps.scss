@@ -1,0 +1,13 @@
+$estilos: (
+    colorM: #000000,
+    colorS: rgba(109, 3, 3, 0.709),
+);
+
+.text__Main {
+    color:map-get($estilos, colorM);
+    text-decoration:map-get($estilos , text-decoration)
+}
+
+.text__Sub {
+    color:map-get($estilos, colorS)
+}

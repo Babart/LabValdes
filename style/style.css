@@ -1,0 +1,776 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+} */
+
+/* Header Style */
+
+/* header {
+   
+    display: flex;
+    display: inline-block;
+    width: 100%;
+    
+    
+   
+
+} */
+
+/* header nav a:link{
+    color:rgb(15, 1, 15)
+
+}
+
+header nav a:visited{
+    color: rgb(15, 1, 15)
+
+}
+
+header nav a:hover{
+    color:rgba(245, 235, 235, 0.775)
+
+
+}
+
+header nav a:active{
+    color: gray
+
+} */
+
+/* li {
+    list-style: none;
+} */
+
+/* Style Bootstrap */   /* DALEEEEE VOS PODESSSSSSS!!!!!!!!  */
+
+/* .navbar-expand-lg .navbar-collapse {
+    background-image: linear-gradient(to right, rgb(210, 29, 29), gray);
+    border-radius: 20px;
+}
+
+.container-fluid {
+    background-image: linear-gradient(to left, gray, white);
+} */
+
+/* .navbar-expand-lg .navbar-collapse {
+    border-radius: 20px;
+} */
+
+/*  */ /*  */ /*  *//*  *//*  *//*  *//*  *//*  */
+
+/* .accordion-button {
+    background-image: linear-gradient(to right, gray , white);
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    
+} */
+
+/* button.accordion-button {
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+} */
+/* .accordion-body {
+    background-image: linear-gradient(to bottom, white, rgb(196, 196, 246));
+} */
+
+
+
+/*  */
+
+
+/* header .header__burguerMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 69, 69);
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 2rem;
+    color: grey;
+    border-radius: 7px;
+    cursor: cell;
+    transition: box-shadow 0.5s ease-in;
+  } */
+
+ /*  header button.header__burguerMenu:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+   */
+ /*  input#menu:checked ~ .header__menu {
+    display: block;
+  }  */
+
+ /*  header .header__menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background-color: red;
+  } */
+  
+ /*  header .header__menu .header__closeMenu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    
+  }
+ */
+ /*  header .header__menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  header .header__menu ul li {
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 0.5rem;
+  } */
+  
+/*   header .header__menu ul li:hover {
+    background-color: rgb(193, 177, 177);
+  } */
+  
+  
+/*   header #header__menu--itemGallery ul {
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  
+  header #header__menu--itemGallery ul li a {
+    color: rgb(160, 160, 160);
+    text-transform: capitalize;
+    font-weight: 400px;
+  } */
+
+  /*  */
+
+/* .barrNav {
+    border: solid 2px gray;
+    background-color: rgba(240, 14, 14, 0.933);
+    background-image: linear-gradient(red, gray);
+    border-radius: 1cm;
+    margin: 25px;
+    text-align: center;
+    justify-content: center;
+    
+
+    
+} */
+
+/* header nav .menu {
+    display: inline-flex;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 7px;
+    margin: 25px;
+    
+    
+    
+    
+}
+ */
+
+/* #logo {
+    display: flex;
+    position: relative;
+    width: 30%;
+    height: 30%;
+} */
+
+/* .encabezado {
+    display: flex;
+    
+    
+}
+.datosEncabezado {
+    border: solid 5px rgb(228, 223, 223);
+    color: rgb(86, 85, 85);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0) ;
+    background-image: linear-gradient(to left, gray, white);
+    width: 100%;
+    
+} */
+
+
+/* Main Style */
+
+
+/* .homeIndex {
+    margin-left: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.IndicacionesReceta {
+    background-image: linear-gradient(to bottom, gray, white);
+    
+}
+
+.recetarios {
+    display: flex;
+    flex-direction: row;
+}
+ */
+
+
+/* .IndexFinal {
+    background-image: linear-gradient(to top, gray, white);
+} */
+
+
+
+/* .analisisIndicaciones {
+    display: grid;
+   display: flex;
+   display: inline-block;
+   grid-template-columns: 500px 500px ;
+   grid-template-rows: repeat(2, 33%);
+   padding: 15px;
+   justify-content: center;
+   align-items: center;
+   
+   
+
+    
+} */
+
+
+/* .indicaciones {
+    display: inline-block;
+    display: grid;
+    border: solid 3px gray;
+    color: rgba(61, 61, 61, 0.987);
+    width: 100%;
+
+}
+ */
+/* .indicacionesArticle {
+    background-color: red;
+    background-image: linear-gradient(to left, red, white);
+    padding: 10px;
+    
+} */
+
+
+
+
+
+ /* .tituloCovid {
+    font-size:  40px;
+    color: red;
+    text-align: center;
+}
+
+.tituloCovid2 {
+    text-decoration: underline;
+    text-align: center;
+    font-size: medium;
+} */
+
+/* 
+.covidSubtitulo {
+    font-size: 35px;
+    color: red;
+    text-shadow: 2px 3px 5px black;
+    text-align: center;
+}
+
+.covid1{
+    font-size: 20px;
+}
+
+.profBioq {
+    display: flex;
+    background-image: linear-gradient(to top, gray, white);
+}
+
+.profBioq1 {
+    display: flex;
+    background-image: linear-gradient(to bottom, gray, white);
+
+}
+
+#fotoProfesional {
+    display: flex;
+    width: 20vw;
+    height: 30vh;
+    border: solid 2px gray
+
+}
+
+.profesional {
+    text-align: center;
+    padding: 50px;
+    font-size: 25px;
+    
+}
+
+#covid {
+    
+     margin-left: 50px;
+     margin-top: 20px;
+     float: left;
+     
+}
+
+.covidSection {
+    margin: 0%;
+    display: inline-block;
+    background-image: linear-gradient(to top, gray, white);
+
+
+}
+
+.molecular {
+    background-image: linear-gradient(to bottom, gray, white);
+}
+
+
+.covidExplicacion {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 1.5
+}
+.covidSection img{
+    border-radius:  5px;
+    width: 30%;
+   
+} */
+
+/* #mapa{
+    display: flex;
+} */
+
+/* #labFondo {
+    background-image: url(../image/labFondo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.95;
+    z-index: 0;
+    
+} */
+
+
+/* CONTACTO  */
+
+
+
+/* #telefono {
+    background-color: rgba(245, 165, 165, 0.96);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    
+}
+#nombre {
+    background-color: rgba(245, 165, 165, 0.96);
+    border-radius: 10px;
+    font-size: 20px;
+}
+#message{
+    background-color: rgba(211, 204, 204, 0.96);
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#formContact{
+    text-align: center;
+    justify-content: center;
+    background-image: linear-gradient(to top, gray, white);
+}
+
+#email{
+    background-color: rgba(245, 165, 165, 0.96);
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.contactenos {
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.boton {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.boton:hover{
+    color: red;
+    background-color: rgba(255, 0, 0, 0.689);
+    text-decoration: none;
+
+}
+.boton {
+  text-decoration: none;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5px;
+  background-color: rgba(135, 131, 131, 0.83);
+  transition: color red, background-color 0.5s ease-in;
+
+} */
+
+
+/* TUS RESULTADOS ONLINE */
+
+/* .resultadoMain {
+    background-image: linear-gradient(to bottom, gray, white);
+} */
+/* 
+.recicle {
+    width: 100%;
+}
+ */
+
+
+
+
+/* Footer Style */
+
+
+/* footer {
+   background-color: rgb(194, 193, 193);
+} */
+
+/* .foot {
+    
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    background-image: linear-gradient(to left, gray, white);
+    
+
+} */
+
+/* .socialMedia a {
+    
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  width: 5rem;
+  height: 5rem;
+  color: white;
+  background-color: rgba(135, 131, 131, 0.83);
+  border-radius: 50%;
+  transition: color, background-color 0.5s ease-in;
+}
+
+.socialMedia a:hover {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.689);
+    text-decoration: none;
+}
+
+.socialMedia {
+    display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  text-decoration: none;
+  
+} */
+
+/* .googleMapa {
+    width: 100%;
+}
+ */
+
+
+
+
+
+/* Media Queries */
+
+/* @media screen and (max-width: 428px) { */
+
+
+
+
+
+    
+ 
+
+   
+
+    /* Desplegable Indicaciones */
+
+  
+
+/*     #fotoProfesional {
+        display: flex;
+        width: 30vw;
+        height: 20vh;
+        border: solid 2px gray
+    
+    }
+
+    #covid {
+        display: none;
+    }
+
+  
+    .formulario {
+        width: 250x;
+        height: 250px;
+        margin: 2rem;
+
+    } */
+
+   /*  #message {
+        background-color: rgba(211, 204, 204, 0.96);
+        border-radius: 10px;
+        font-size: 20px;
+        height: 61px;
+        width: 370px;
+      }
+
+      .boton {
+        text-decoration: none;
+        width: 5rem;
+        height: 3rem;
+        border-radius: 5px;
+        background-color: rgba(135, 131, 131, 0.83);
+        transition: color red, background-color 0.5s ease-in;
+      
+      } */
+
+    /*   .datosEncabezado { */
+        /* border: solid 5px rgb(228, 223, 223);
+        color: rgb(86, 85, 85);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        justify-content: center;
+        font-size: 20px;
+        text-shadow: 2px 2px 3px rgb(0, 0, 0) ;
+        background-image: linear-gradient(to left, gray, white);
+        width: 100%; */
+   /*      display: none; */
+        
+  /*     } */
+
+        /* #logo {
+            width: 25rem;
+            height: auto;
+        }
+
+        header .header__burguerMenu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 2.5rem;
+            height: 2.5rem;
+            font-size: 2rem;
+            background-color: rgb(245, 69, 69);
+            transition: box-shadow 0.5s ease-in;
+            border: none;
+            color: grey;
+            border-radius: 7px;
+            cursor: cell;
+            
+          }
+        
+          header button.header__burguerMenu:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          }
+          
+          input#menu:checked ~ .header__menu {
+            display: block;
+          } 
+        
+          header .header__menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%; 
+            height: 100%;
+            background-image: linear-gradient(to top, red, gray);
+
+          }
+          
+          header .header__menu .header__closeMenu {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.5rem;
+            
+          }
+        
+          header .header__menu ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            z-index: 99999;
+          }
+          
+          header .header__menu ul li {
+            
+            font-weight: 900px;
+            border-radius: 5px;
+            padding: 0.5rem;
+            text-transform: uppercase;
+          }
+          
+          header .header__menu ul li:hover {
+            background-color: rgb(173, 153, 153);
+            border-radius: 15px;
+          }
+          
+          
+          header #header__menu--itemGallery ul {
+            flex-direction: column;
+            border-radius: 10px;
+          }
+          
+          header #header__menu--itemGallery ul li a {
+            color: rgb(186, 185, 185);
+            text-transform: capitalize;
+            font-weight: 400;
+          } */
+
+        
+
+
+        /* } */
+
+
+
+
+
+
+
+
+/* 
+@media screen and (min-width: 810px) { */
+
+   
+  
+
+  /*   #logo {
+        width: 25rem;
+        height: auto;
+    }
+
+    .barrNav {
+        border: solid 2px gray;
+        background-color: rgba(240, 14, 14, 0.933);
+        background-image: linear-gradient(gray, red);
+        border-radius: 1cm;
+        margin: 25px;
+        text-align: center;
+        justify-content: center;
+        
+    } */
+
+    /* header nav a {
+        font-size: x-large;
+        text-decoration: none;
+    } */
+ 
+  /*   .indicaciones {
+        display: inline-block;
+        display: grid;
+        border: solid 3px gray;
+        color: rgba(61, 61, 61, 0.987);
+        width: 75%;
+    
+    }
+    #tiroides {
+        display: flex;
+        object-fit: contain;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+        height: 30vh;
+        margin-left: 30px;
+   
+    }
+    #fertilidad {
+        display: flex;
+        object-fit: contain;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+        height: 30vh;
+        margin-left: 30px;
+       
+    
+    }
+    #prostatico {
+        display: flex;
+        object-fit: contain;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+        height: 30vh;
+        margin-left: 30px;
+    
+    } */
+    
+  /*   #rutina {
+        display: flex;
+        object-fit: contain;
+        width: 30vw;
+        height: 30vh;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+    
+    } */
+
+   /*  .indicacionesArticle { */
+        /* background-color: red; */
+        /* background-image: linear-gradient(to right, red, white);
+        padding-left: -100px;
+        border-radius: 20px;
+        width: 80%;
+         */
+        
+ /*    } */
+
+ /*    header .header__burguerMenu {
+        display: none;
+     
+    }
+
+    .checkMenu {
+        display: none;
+    }
+      */
+  
+
+/* }
+ */
+
+

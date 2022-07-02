@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+.boton, .boton-cancelar, main .formulario #formContact .boton-cancelar {
+  text-decoration: none;
+  font-size: 20px;
+  margin: 10px;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5px;
+  background-color: rgba(135, 131, 131, 0.83);
+  transition: color red, background-color 0.5s ease-in; }
+  .boton:hover, .boton-cancelar:hover, main .formulario #formContact .boton-cancelar:hover {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.689);
+    text-decoration: none; }
+
+.boton-cancelar {
+  background-color: blue; }
+
+.text__Main {
+  color: #000000; }
+
+.text__Sub {
+  color: rgba(109, 3, 3, 0.709); }
+
+.covidExplicacion {
+  display: flex;
+  justify-content: center; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+header {
+  display: flex;
+  display: inline-block;
+  width: 100%; }
+  header .encabezado {
+    display: flex; }
+    header .encabezado .datosEncabezado {
+      border: solid 5px #e4dfdf;
+      color: #565555;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+      justify-content: center;
+      font-size: 20px;
+      text-shadow: 2px 2px 3px black;
+      background-image: linear-gradient(to left, gray, white);
+      width: 100%; }
+      @media (max-width: 427px) {
+        header .encabezado .datosEncabezado {
+          display: none; } }
+      header .encabezado .datosEncabezado li {
+        list-style: none; }
+  header .navbar-expand-lg .navbar-collapse {
+    background-image: linear-gradient(to right, #d21d1d, gray);
+    border-radius: 20px;
+    font-size: 20px; }
+    header .navbar-expand-lg .navbar-collapse .container-fluid {
+      background-image: linear-gradient(to left, gray, white); }
+      @media (max-width: 427px) {
+        header .navbar-expand-lg .navbar-collapse .container-fluid a .logoGerbio {
+          height: 50px;
+          width: 50px; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+main .IndicacionesReceta {
+  background-image: linear-gradient(to bottom, gray, white); }
+  main .IndicacionesReceta .homeIndex {
+    margin-left: 10px;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px; }
+  main .IndicacionesReceta .recetarios {
+    display: flex;
+    flex-direction: row; }
+  main .IndicacionesReceta .socialMedia {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    text-decoration: none; }
+    main .IndicacionesReceta .socialMedia a {
+      display: flex;
+      text-decoration: none;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      width: 5rem;
+      height: 5rem;
+      color: white;
+      background-color: rgba(135, 131, 131, 0.83);
+      border-radius: 50%;
+      transition: color, background-color 0.5s ease-in; }
+      main .IndicacionesReceta .socialMedia a:hover {
+        color: red;
+        background-color: rgba(255, 0, 0, 0.689);
+        text-decoration: none; }
+
+main .IndexFinal {
+  background-image: linear-gradient(to top, gray, white); }
+  main .IndexFinal .homeIndex {
+    margin-left: 10px;
+    text-align: center;
+    font-size: 20px; }
+  main .IndexFinal .googleMapa {
+    width: 100%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+main .accordion-button {
+  background-image: linear-gradient(to right, gray, white);
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center; }
+
+main .accordion-body {
+  background-image: linear-gradient(to bottom, white, #c4c4f6); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+.resultadoMain {
+  background-image: linear-gradient(to bottom, gray, white); }
+  .resultadoMain .homeIndex {
+    margin-left: 10px;
+    text-align: center;
+    font-size: 20px; }
+  .resultadoMain .recicle {
+    width: 100%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+main .covidSection {
+  margin: 0%;
+  display: inline-block;
+  background-image: linear-gradient(to top, gray, white); }
+  main .covidSection #covid {
+    margin-left: 50px;
+    margin-top: 20px;
+    float: left;
+    padding: 50px;
+    border-radius: 120px; }
+    @media (max-width: 427px) {
+      main .covidSection #covid {
+        padding: 20px;
+        border-radius: 30px; } }
+
+main .covid1 {
+  font-size: 20px; }
+
+main .tituloCovid {
+  font-size: 40px;
+  color: red;
+  text-align: center; }
+
+main .covidExplicacion {
+  /* display: flex;
+            justify-content: center; */
+  font-size: 20px;
+  line-height: 1.5; }
+
+main .covidSubtitulo {
+  font-size: 35px;
+  color: red;
+  text-shadow: 2px 3px 5px black;
+  text-align: center; }
+
+main .molecular {
+  background-image: linear-gradient(to bottom, gray, white); }
+  main .molecular .covid1 {
+    font-size: 20px;
+    padding: 20px; }
+  main .molecular .tituloCovid {
+    font-size: 40px;
+    color: red;
+    text-align: center; }
+  main .molecular .tituloCovid2 {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 40px; }
+
+main .profBioq {
+  display: flex;
+  background-image: linear-gradient(to top, gray, white); }
+  @media (max-width: 600px) {
+    main .profBioq .fotoProf {
+      display: none; } }
+  main .profBioq .fotoProf #fotoProfesional {
+    display: flex;
+    width: 20vw;
+    height: 30vh;
+    border: solid 2px gray;
+    padding-left: 15px; }
+  main .profBioq .fotoProf .profesional {
+    text-align: center;
+    padding: 50px;
+    font-size: 25px; }
+
+main .profBioq1 {
+  display: flex;
+  background-image: linear-gradient(to bottom, gray, white); }
+  @media (max-width: 600px) {
+    main .profBioq1 .fotoProf1 {
+      display: none; } }
+  main .profBioq1 #fotoProfesional {
+    display: flex;
+    width: 20vw;
+    height: 30vh;
+    border: solid 2px gray;
+    padding-left: 15px; }
+  main .profBioq1 .profesional {
+    text-align: center;
+    padding: 50px;
+    font-size: 25px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+main .formulario #formContact {
+  text-align: center;
+  justify-content: center;
+  background-image: linear-gradient(to top, gray, white); }
+  main .formulario #formContact #telefono {
+    background-color: rgba(245, 165, 165, 0.96);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px; }
+  main .formulario #formContact #nombre {
+    background-color: rgba(245, 165, 165, 0.96);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px; }
+  main .formulario #formContact #message {
+    background-color: rgba(211, 204, 204, 0.96);
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 30px;
+    max-width: 60%;
+    border: 1px solid black; }
+  main .formulario #formContact #email {
+    background-color: rgba(245, 165, 165, 0.96);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px; }
+  main .formulario #formContact .boton, main .formulario #formContact .boton-cancelar {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5px;
+    background-color: rgba(167, 150, 150, 0.83);
+    transition: color red, background-color 0.5s ease-in; }
+    main .formulario #formContact .boton:hover, main .formulario #formContact .boton-cancelar:hover {
+      color: red;
+      background-color: rgba(255, 0, 0, 0.689);
+      text-decoration: none; }
+  main .formulario #formContact .boton-cancelar {
+    background-color: #f1c9c9; }
+  main .formulario #formContact .contactenos {
+    align-items: center;
+    justify-content: center;
+    font-size: 20px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+footer {
+  background-color: #c2c1c1; }
+  footer .foot {
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    background-image: linear-gradient(to left, gray, white); }
+  footer .socialMedia {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    text-decoration: none; }
+    footer .socialMedia a {
+      display: flex;
+      text-decoration: none;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      width: 5rem;
+      height: 5rem;
+      color: white;
+      background-color: rgba(135, 131, 131, 0.83);
+      border-radius: 50%;
+      transition: color, background-color 0.5s ease-in; }
+      footer .socialMedia a:hover {
+        color: red;
+        background-color: rgba(255, 0, 0, 0.689);
+        text-decoration: none; }

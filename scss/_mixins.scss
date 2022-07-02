@@ -1,0 +1,12 @@
+//MIXINS
+
+@mixin centrarFlex() {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.covidExplicacion {
+    @include centrarFlex();
+}
