@@ -24,6 +24,7 @@ function entrada (){
     for(let i = 0; i < historicoAnalisis.length; i++) {
         indice(i)
     }
+    alert ("Los resultados son " + JSON.stringify(historicoAnalisis, null, 2))
     
 }
 
@@ -74,6 +75,8 @@ function historico(historicoAnalisis) {
         historicoAnalisis[i].indice = resultado;
     }
 }
+
+
 
 
 
