@@ -1,6 +1,6 @@
 //usando ciclo for
 
- let nombreDerivante = prompt("Buen día, Ingrese su nombre");
+ /* let nombreDerivante = prompt("Buen día, Ingrese su nombre");
 
 
 let total_prestaciones = 0;
@@ -18,45 +18,22 @@ for (let i = 0; i < cantidad_analisis; i++) {
 
 
 
-alert ("Estimado derivante " + nombreDerivante + " El total a abonar por las derivaciones seleccionadas es de: $" + total_prestaciones);
+alert ("Estimado derivante " + nombreDerivante + " El total a abonar por las derivaciones seleccionadas es de: $" + total_prestaciones); */
 
 
  
-
-//
-
-/* let namePaciente = prompt("Buen día, Ingrese su nombre");
-
-let colTotal = prompt("Ingrese su valor de Colesterol Total");
-
-let colesterolTotal = 0;
-
-let colHDL = prompt("Ingrese su valor de Colesterol HDL")
-
-let colesterolHDL= 0;
-
-let trigli = prompt("Ingrese su valor de Triglicéridos")
-
-let Triglicéridos = 0; 
-
-
-let colLDL = prompt("Ingrese su valor de Colesterol LDL")
-
-let colesterolLDL = 0;
-
-let indice = 0;
-
-colesterolTotal/colesterolHDL;
-
-if (indice < 4){
-
-    alert ("Su índice es normal");
-
-} else {
-    alert ("Su indice supera el valor esperado, consulte con su médico de cabecera")
-};
-
-
-
-
- */
+const estudios = [
+    { id: 1, nombre: "glucemia", precio: 110 },
+    { id: 2, nombre: "uremia", precio: 120 },
+    { id: 3, nombre: "creatinina", precio: 330 },
+    { id: 4, nombre: "colesterol", precio: 5000 },
+    { id: 5, nombre: "hdl", precio: 750 },
+    { id: 6, nombre: "ldl", precio: 980 },
+  ];
+  let estudio = prompt("ingrese el estudio que desea verificar su disponibilidad").toLowerCase();
+  let resultado = estudios.some(elemento => elemento.nombre === estudio);
+  if(resultado){
+    alert("Estudio disponible");
+  }else{
+    alert("Estudio no disponible");
+  }

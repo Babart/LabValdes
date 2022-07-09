@@ -1,37 +1,44 @@
-//
 
-let namePaciente = prompt("Buen día, Ingrese su nombre");
+const historicoAnalisis = [
+        {
+            colTotal : 0,
+            colHDL :  0,
+            fecha: new Date(),
+            indice: 0
+        },
+        {
+            colTotal : 0,
+            colHDL :  0,
+            fecha: new Date(),
+            indice: 0
+        },
+        {
+            colTotal : 0,
+            colHDL :  0,
+            fecha: new Date(),
+            indice: 0
+        }
+    ];
 
-let colTotal = prompt("Ingrese su valor de Colesterol Total");
-
-let colesterolTotal = 0;
-
-let colHDL = prompt("Ingrese su valor de Colesterol HDL")
-
-let colesterolHDL= 0;
-
-let trigli = prompt("Ingrese su valor de Triglicéridos")
-
-let Trigliceridos = 0; 
-
-let colLDL = prompt("Ingrese su valor de Colesterol LDL")
-
-let colesterolLDL = 0;
-
-function indice (colesterolTotal, colesterolHDL){
-    let colesterolTotal = 0;
-    let colesterolHDL= 0;
+function entrada (){
+    for(let i = 0; i < historicoAnalisis.length; i++) {
+        indice(i)
+    }
     
+}
 
-    if  (!colesterolTotal && !colesterolHDL) {
-        alert("Colesterol total y HDL son valores requeridos")
+function indice (i){
+    let namePaciente = prompt("Buen día, Ingrese los datos del paciente "+ i);
+    let colTotal = +prompt("Ingrese su valor de Colesterol Total");
+    let colHDL = + +prompt("Ingrese su valor de Colesterol HDL");
+
+    const isValid = validaciones(colTotal, colHDL)
+    if (!isValid) {
+        return null;
     }
 
-    if (colesterolHDL === 0) {
-        alert ("Coelsterol HDL no puede ser 0")
-    }
+    let calculoIndice = colTotal/colHDL;
 
-    let calculoIndice = colesterolTotal/colesterolHDL;
 
     if (calculoIndice < 4){
 
@@ -40,37 +47,35 @@ function indice (colesterolTotal, colesterolHDL){
     } else {
         alert (namePaciente + " Su indice supera el valor esperado, consulte con su médico de cabecera")
     };
+    historicoAnalisis[i] = ({name: namePaciente, colHDL : colHDL, colTotal: colHDL, indice: calculoIndice})
+    return null;
 }
 
-const historicoAnalisis = [
-    {
-        colesterolTotal : 2,
-        colesterolHdl :  4,
-        fecha: new Date(),
-        indice: 0
-    },
-    {
-        colesterolTotal : 2,
-        colesterolHdl :  4,
-        fecha: new Date(),
-        indice: 0
-    },
-    {
-        colesterolTotal : 2,
-        colesterolHdl :  4,
-        fecha: new Date(),
-        indice: 0
-    }
-];
+function validaciones(colTotal, colHDL) {
+    if  (!colTotal && !colHDL) {
+        alert("Colesterol total y HDL son valores requeridos")
+        return false
+    };
+
+    if (colHDL === 0) {
+        alert ("Colesterol HDL no puede ser 0")
+        return false
+    };
+    return true
+}
+
+
+entrada()
+
 
 function historico(historicoAnalisis) {
     for(let i = 0; i < historicoAnalisis.length; i++) {
-        const resultado = indice(historicoAnalisis[i].colesterolTotal, historicoAnalisis[i].colesterolHdl);
+        const resultado = indice(historicoAnalisis[i].colTotal, historicoAnalisis[i].colHdl);
         historicoAnalisis[i].indice = resultado;
     }
 }
 
-alert ("Usted ha cargado sus resultados correctamente")
+
 
 
 
