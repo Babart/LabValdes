@@ -1,6 +1,6 @@
 //
 
-/* let namePaciente = prompt("Buen día, Ingrese su nombre");
+let namePaciente = prompt("Buen día, Ingrese su nombre");
 
 let colTotal = prompt("Ingrese su valor de Colesterol Total");
 
@@ -12,13 +12,16 @@ let colesterolHDL= 0;
 
 let trigli = prompt("Ingrese su valor de Triglicéridos")
 
-let Triglicéridos = 0; 
+let Trigliceridos = 0; 
 
 let colLDL = prompt("Ingrese su valor de Colesterol LDL")
 
-let colesterolLDL = 0; */
+let colesterolLDL = 0;
 
 function indice (colesterolTotal, colesterolHDL){
+    let colesterolTotal = 0;
+    let colesterolHDL= 0;
+    
 
     if  (!colesterolTotal && !colesterolHDL) {
         alert("Colesterol total y HDL son valores requeridos")
@@ -41,20 +44,20 @@ function indice (colesterolTotal, colesterolHDL){
 
 const historicoAnalisis = [
     {
-        colTotal : 2,
-        colHdl :  4,
+        colesterolTotal : 2,
+        colesterolHdl :  4,
         fecha: new Date(),
         indice: 0
     },
     {
-        colTotal : 2,
-        colHdl :  4,
+        colesterolTotal : 2,
+        colesterolHdl :  4,
         fecha: new Date(),
         indice: 0
     },
     {
-        colTotal : 2,
-        colHdl :  4,
+        colesterolTotal : 2,
+        colesterolHdl :  4,
         fecha: new Date(),
         indice: 0
     }
@@ -62,18 +65,13 @@ const historicoAnalisis = [
 
 function historico(historicoAnalisis) {
     for(let i = 0; i < historicoAnalisis.length; i++) {
-        const resultado = indice(historicoAnalisis[i].colTotal, histprocpAnalisis[i].colHdl);
+        const resultado = indice(historicoAnalisis[i].colesterolTotal, historicoAnalisis[i].colesterolHdl);
         historicoAnalisis[i].indice = resultado;
     }
 }
-/* if (indice < 4){
 
-    alert (namePaciente + " Su índice es normal");
+alert ("Usted ha cargado sus resultados correctamente")
 
-} else {
-    alert (namePaciente + " Su indice supera el valor esperado, consulte con su médico de cabecera")
-};
- */
 
 
 
