@@ -60,9 +60,7 @@
                     <a class="nav-link" href="calculo.html">Calculo</a>
                     
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="derivacion.html">Buscador de estudio</a>
-                  </li>
+                 
             
                 </ul>
               </div>
@@ -70,6 +68,31 @@
           </nav>
     </header>
     <main> <!-- #labFondo -->
+
+      <div class="formulario">
+        <form action="calculo.html" method="get"id="formContact">
+            
+                <label>Buen día, Ingrese su nombre</label>
+                <input type="text" name="userName" id="nombre" required><br>
+                <label>Ingrese la cantidad de estudios a cargar</label>
+                <input type="text" name="estudios" id="estudios" value=""><br>
+                <label>Ingrese su valor de Colesterol Total</label>
+                <input type="text" name="colTotal" id="colTotal"><br>
+                <label>Ingrese su valor de HDL</label>
+                <input type="text"name="colHDL" id="colHDL"><br>
+                <label>Ingrese su correo electrónico</label>
+                <input type="email" name="email" id="email"required><br>
+                <button class="boton" type="submit">Enviar</button>
+                <button class="boton-cancelar" type="reset">Limpiar</button>
+                
+            
+        </form>
+
+    </div>
+
+    <div id="calculoResultado"></div>
+
+
 
       <h1 class="text-center fw-bold">GRACIAS POR UTILIZAR LA SECCION DE CALCULO, TE SUGERIMOS TE REALICES CONTROLES ANUALES o SEMESTRALES SEGUN INDICACIONES DE TU MEDICO DE CABECERA</h1>
        

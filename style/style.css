@@ -665,6 +665,34 @@ header nav a:active{
         /* } */
 
 
+        #estudios {
+        background-color: rgba(245, 165, 165, 0.96);
+        border-radius: 10px;
+        font-size: 20px;
+
+   
+        }
+
+        #colTotal {
+        background-color: rgba(245, 165, 165, 0.96);
+        border-radius: 10px;
+        font-size: 20px;
+        }
+
+        #colHDL {
+        background-color: rgba(245, 165, 165, 0.96);
+        border-radius: 10px;
+        font-size: 20px;
+    
+        }
+
+        #calculoResultado {
+        background-color: rgba(245, 165, 165, 0.96);
+        border-radius: 10px;
+        font-size: 20px;
+        }
+
+
 
 
 
