@@ -1,37 +1,31 @@
 
-const historicoAnalisis = [
-        {
-            colTotal : 0,
-            colHDL :  0,
-            fecha: new Date(),
-            indice: 0
-        },
-        {
-            colTotal : 0,
-            colHDL :  0,
-            fecha: new Date(),
-            indice: 0
-        },
-        {
-            colTotal : 0,
-            colHDL :  0,
-            fecha: new Date(),
-            indice: 0
-        }
-    ];
+class Paciente {
+    constructor (id, colTotal, colHDL, indice) {
+        this.id = id;
+        this.colTotal = colTotal;
+        this.colHDL = colHDL;
+        this.indice = indice; 
+    }
+    
+}
+
+const historicoAnalisis = [];
 
 function entrada (){
-    for(let i = 0; i < historicoAnalisis.length; i++) {
+    let namePaciente = prompt("Buen día, Ingrese su nombre");
+    let numeroEstudio = parseInt(prompt("Ingrese la cantidad de estudios a cargar"))
+    console.log(numeroEstudio)
+    for(let i = 0; i < numeroEstudio; i++) {
         indice(i)
     }
-    alert ("Los resultados son " + JSON.stringify(historicoAnalisis, null, 2))
+    alert ("Los resultados de " + namePaciente + " son " + JSON.stringify(historicoAnalisis, null, 2))
     
 }
 
 function indice (i){
-    let namePaciente = prompt("Buen día, Ingrese los datos del paciente "+ i);
+    
     let colTotal = +prompt("Ingrese su valor de Colesterol Total");
-    let colHDL = + +prompt("Ingrese su valor de Colesterol HDL");
+    let colHDL =  +prompt("Ingrese su valor de Colesterol HDL");
 
     const isValid = validaciones(colTotal, colHDL)
     if (!isValid) {
@@ -43,13 +37,13 @@ function indice (i){
 
     if (calculoIndice < 4){
 
-        alert (namePaciente + " Su índice es normal");
+        alert (" Su índice es normal");
     
     } else {
-        alert (namePaciente + " Su indice supera el valor esperado, consulte con su médico de cabecera")
+        alert (" Su indice supera el valor esperado, consulte con su médico de cabecera")
     };
-    historicoAnalisis[i] = ({name: namePaciente, colHDL : colHDL, colTotal: colHDL, indice: calculoIndice})
-    return null;
+    historicoAnalisis.push(new Paciente(i, colTotal, colHDL, calculoIndice))
+    return null
 }
 
 function validaciones(colTotal, colHDL) {
@@ -66,7 +60,7 @@ function validaciones(colTotal, colHDL) {
 }
 
 
-entrada()
+entrada();
 
 
 function historico(historicoAnalisis) {
