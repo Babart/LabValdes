@@ -1,3 +1,4 @@
+//COMENTO ESTO POR SI JODO LO QUE AVANCE, el CODIGO FUNCIONAL ESTA MAS ABAJO
 /* 
 
 
@@ -77,7 +78,7 @@ function historico(historicoAnalisis) {
 }
  */
 
-
+///CODIGO FUNCIONAL
 
 let calculoResultado = document.getElementById("calculoResultado");
 
