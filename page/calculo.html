@@ -70,20 +70,41 @@
     <main> <!-- #labFondo -->
 
       <div class="formulario">
-        <form action="calculo.html" method="get"id="formContact">
+        <form action="calculo.html" method="get" id="formContact">
             
                 <label>Buen día, Ingrese su nombre</label>
                 <input type="text" name="userName" id="nombre" required><br>
-                <label>Ingrese la cantidad de estudios a cargar</label>
-                <input type="text" name="estudios" id="estudios" value=""><br>
-                <label>Ingrese su valor de Colesterol Total</label>
-                <input type="text" name="colTotal" id="colTotal"><br>
-                <label>Ingrese su valor de HDL</label>
-                <input type="text"name="colHDL" id="colHDL"><br>
                 <label>Ingrese su correo electrónico</label>
                 <input type="email" name="email" id="email"required><br>
-                <button class="boton" type="submit">Enviar</button>
-                <button class="boton-cancelar" type="reset">Limpiar</button>
+                <label>Ingrese la cantidad de estudios a cargar</label>
+                <select name="option" id="desplegable">
+                  <option value=1>1 resultado</option>
+                  <option value=2>2 resultados</option>
+                  <option value=3>3 resultados</option>
+                </select>
+                <br>
+                <label>Ingrese su valor de Colesterol Total</label>
+                <input type="text" name="colTotal" id="colTotal1"><br>
+                <label>Ingrese su valor de HDL</label>
+                <input type="text"name="colHDL" id="colHDL1"><br>
+
+                <div>
+                  <label>Ingrese su valor de Colesterol Total</label>
+                  <input type="text" name="colTotal" id="colTotal2"><br>
+                  <label>Ingrese su valor de HDL</label>
+                  <input type="text"name="colHDL" id="colHDL2"><br>
+                </div>
+                
+                <div>
+                  <label>Ingrese su valor de Colesterol Total</label>
+                  <input type="text" name="colTotal" id="colTotal3"><br>
+                  <label>Ingrese su valor de HDL</label>
+                  <input type="text"name="colHDL" id="colHDL3"><br>
+                </div>
+         
+                <button class="boton" type="submit" onclick="coso()">Enviar</button>
+                <button class="boton-cancelar" type="reset" onclick="limpiar()">Limpiar</button>
+                
                 
             
         </form>

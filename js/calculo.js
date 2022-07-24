@@ -1,13 +1,31 @@
-//COMENTO ESTO POR SI JODO LO QUE AVANCE, el CODIGO FUNCIONAL ESTA MAS ABAJO
-/* 
 
+
+const coso = () => {
+    const formProps = document.getElementById('formContact').elements;
+    localStorage.setItem('nombre', formProps['nombre'].value);
+    localStorage.setItem('cant', formProps['desplegable'].value);
+    localStorage.setItem('email', formProps['email'].value);
+
+    const datosCargados = [];
+    for (let i= 1; i <= formProps['desplegable'].value; i++) {
+        datosCargados.push({
+            colTotal:  formProps['colTotal'+i].value,
+            colHDL:  formProps['colHDL'+i].value
+        })
+    }
+    localStorage.setItem('estudios',JSON.stringify(datosCargados));
+    entrada()
+}
 
 let calculoResultado = document.getElementById("calculoResultado");
 
+const limpiar = () => {
+    localStorage.clear();
+
+}
 
 class Paciente {
-    constructor (id, colTotal, colHDL, indice) {
-        this.id = id;
+    constructor (colTotal, colHDL, indice) {
         this.colTotal = colTotal;
         this.colHDL = colHDL;
         this.indice = indice; 
@@ -19,117 +37,29 @@ const historicoAnalisis = [];
 
 
 function entrada (){
-    let namePaciente = prompt("Buen día, Ingrese su nombre");
-    let numeroEstudio = parseInt(prompt("Ingrese la cantidad de estudios a cargar"))
-    console.log(numeroEstudio)
-    for(let i = 0; i < numeroEstudio; i++) {
-        indice(i)
+    event.preventDefault();
+    const estudios = JSON.parse(localStorage.getItem('estudios'))
+    for(let i = 0; i < estudios.length; i++) {
+        const colTotal = estudios[i].colTotal;
+        const colHDL = estudios[i].colHDL
+
+        let calculoIndice =colTotal/colHDL;
+    
+    
+        if (calculoIndice < 4){
+    
+            calculoResultado.innerHTML = (" Su índice es normal");
+        
+        } else {
+            calculoResultado.innerHTML = (" Su indice supera el valor esperado, consulte con su médico de cabecera")
+        };
+        historicoAnalisis.push(new Paciente(colTotal, colHDL, calculoIndice))
+
     }
-    alert ("Los resultados de " + namePaciente + " son " + JSON.stringify(historicoAnalisis, null, 2))
+    calculoResultado.innerHTML = ("Los resultados de " + localStorage.getItem('nombre') + " son " + JSON.stringify(historicoAnalisis, null, 2))
     
 }
 
-function indice (i){
-    
-    let colTotal = +prompt("Ingrese su valor de Colesterol Total");
-    let colHDL =  +prompt("Ingrese su valor de Colesterol HDL");
-
-    const isValid = validaciones(colTotal, colHDL)
-    if (!isValid) {
-        return null;
-    }
-
-    let calculoIndice = colTotal/colHDL;
-
-
-    if (calculoIndice < 4){
-
-        alert (" Su índice es normal");
-    
-    } else {
-        alert (" Su indice supera el valor esperado, consulte con su médico de cabecera")
-    };
-    historicoAnalisis.push(new Paciente(i, colTotal, colHDL, calculoIndice))
-    return null
-}
-
-function validaciones(colTotal, colHDL) {
-    if  (!colTotal && !colHDL) {
-        alert("Colesterol total y HDL son valores requeridos")
-        return false
-    };
-
-    if (colHDL === 0) {
-        alert ("Colesterol HDL no puede ser 0")
-        return false
-    };
-    return true
-}
-
-
-entrada();
-
-
-function historico(historicoAnalisis) {
-    for(let i = 0; i < historicoAnalisis.length; i++) {
-        const resultado = indice(historicoAnalisis[i].colTotal, historicoAnalisis[i].colHdl);
-        historicoAnalisis[i].indice = resultado;
-    }
-}
- */
-
-///CODIGO FUNCIONAL
-
-let calculoResultado = document.getElementById("calculoResultado");
-
-
-class Paciente {
-    constructor (id, colTotal, colHDL, indice) {
-        this.id = id;
-        this.colTotal = colTotal;
-        this.colHDL = colHDL;
-        this.indice = indice; 
-    }
-    
-}
-
-const historicoAnalisis = [];
-
-
-function entrada (){
-    let namePaciente = prompt("Buen día, Ingrese su nombre");
-    let numeroEstudio = parseInt(prompt("Ingrese la cantidad de estudios a cargar"))
-    console.log(numeroEstudio)
-    for(let i = 0; i < numeroEstudio; i++) {
-        indice(i)
-    }
-    calculoResultado.innerHTML = ("Los resultados de " + namePaciente + " son " + JSON.stringify(historicoAnalisis, null, 2))
-    
-}
-
-function indice (i){
-    
-    let colTotal = +prompt("Ingrese su valor de Colesterol Total");
-    let colHDL =  +prompt("Ingrese su valor de Colesterol HDL");
-
-    const isValid = validaciones(colTotal, colHDL)
-    if (!isValid) {
-        return null;
-    }
-
-    let calculoIndice = colTotal/colHDL;
-
-
-    if (calculoIndice < 4){
-
-        calculoResultado.innerHTML = (" Su índice es normal");
-    
-    } else {
-        calculoResultado.innerHTML = (" Su indice supera el valor esperado, consulte con su médico de cabecera")
-    };
-    historicoAnalisis.push(new Paciente(i, colTotal, colHDL, calculoIndice))
-    return null
-}
 
 function validaciones(colTotal, colHDL) {
     if  (!colTotal && !colHDL) {
@@ -145,15 +75,11 @@ function validaciones(colTotal, colHDL) {
 }
 
 
-entrada();
+//entrada();
 
 
-function historico(historicoAnalisis) {
-    for(let i = 0; i < historicoAnalisis.length; i++) {
-        const resultado = indice(historicoAnalisis[i].colTotal, historicoAnalisis[i].colHdl);
-        historicoAnalisis[i].indice = resultado;
-    }
-}
+
+
 
 
 
